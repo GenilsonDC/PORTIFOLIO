@@ -1,0 +1,69 @@
+.main-bg {
+  background-image: url("../img/main2-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+}
+
+.minimalist-bg {
+  background-image: url("../img/min.jpg");
+  background-size: cover;
+  background-position: center left;
+}
+.minimalist2-bg {
+  background-image: url("../img/lrg.png");
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+.dinamic-bg {
+  background-image: url("https://i.pinimg.com/originals/17/14/09/1714094bc5087f6913aab2618876e0fc.gif");
+
+  background-size: 110%;
+  background-position: center center;
+}
+.dinamic2-bg {
+  background-image: url("https://i.pinimg.com/originals/3d/0f/93/3d0f93241b4bbed25f03bcb95f5aae63.gif");
+  background-size: 95%;
+  background-position: center left;
+  color: var(--white-color);
+}
+
+.white-bg {
+  /* background: var(--white-color); */
+  background-image: url("../img/elm.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: var(--primary-color);
+}
+.white-bg2 {
+  background-image: url("../img/wave.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: var(--primary-color);
+}
+.habilidades-bg {
+  background-image: url("../img/elmt.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--blue1-color);
+}
+
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem var(--gap);
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.menu-spacing {
+  height: 65px;
+}
+
+body .full-width {
+  width: 100%;
+  flex: 1 1 100%;
+}

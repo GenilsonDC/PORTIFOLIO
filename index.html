@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta name="author" content="Genilson do Carmo">
+    <meta name="description" content=" Genilson's Portfolio with bio and skills">
+    <meta name="keywords" content="Swift, web, portifolio, código, html">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/elements.css" />
+    <link rel="stylesheet" href="assets/css/classes.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="shortcut icon" href="assets/img/ico/GCrown.ico" />
+    <title>👑 Genilson do Carmo</title>
+  </head>
+
+  <body>
+    
+    <input
+      id="close-menu"
+      class="close-menu"
+      type="checkbox"
+      aria-label="Close menu"
+      role="button"
+    />
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu dinamic-bg">
+      <div class="main-content menu-content">
+        <h1 onclick="getElementById('close-menu').checked = false;">
+          <a href="https://www.instagram.com/genilson_carmo"  target="_blank"
+            ><img class="imgmenu" src="assets/img/insta.png" alt="icone do instagram, se clicar vai pro perfil de Genilson do Carmo" />
+          </a>
+          <a href="https://github.com/GenilsonDC" target="_blank"
+            ><img class="imgmenu" src="assets/img/github.png" alt="icone do Github, se clicar vai pro perfil de Genilson do Carmo" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/genilson-do-carmo-8a42b89a/"
+            target="_blank"
+            ><img class="imgmenu" src="assets/img/likdn.png" alt="icone do linkedin, se clicar vai pro perfil de Genilson do Carmo"  />
+          </a>
+        </h1>
+
+        <nav>
+          <ul onclick="getElementById('close-menu').checked = false;">
+            <li><a href="#">Início</a></li>
+            <li><a href="#intro">Eu 🙋🏻‍♂️</a></li>
+            <li><a href="#grid-one">Profissional</a></li>
+            <li><a href="#gallery">Projetos</a></li>
+            <li><a href="#grid-two">Habilidades</a></li>
+            <!-- <li><a href="#pricing">EEEEE</a></li> -->
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+             
+        </nav>
+          <!--  _________________ RELÓGIO _________________________-->
+          <div id="clock">
+              
+            <script>
+             function updateClock() {
+                var now = new Date();
+                var hours = String(now.getHours()).padStart(2, "0");
+                var minutes = String(now.getMinutes()).padStart(2, "0");
+                var seconds = String(now.getSeconds()).padStart(2, "0");
+                var date = now.toLocaleDateString();
+
+                var time = hours + ":" + minutes + ":" + seconds;
+                var clockElement = document.getElementById("clock");
+                clockElement.innerHTML = date + " " + time;
+
+                setTimeout(updateClock, 1000); // Atualiza a cada segundo
+              }
+
+              updateClock(); // Inicia o relógio ao carregar a página   
+            </script>  
+          </div>
+          <!--  _________________ RELÓGIO _________________________-->
+      </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="home" class="intro white-bg section">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h1>
+            Bienvenida/o/e<br />
+            いらっしゃいませ<br />
+            Bem vinda/o/e<br />
+            Welcome <br />
+
+
+            <h3>Ao meu PORTIFÓLIO</h3>
+          </h1>
+
+          <p><h6 class="agradecimento">Desde já, <br>agradeço pela visita ❤️‍🔥</h6><br /></p>
+        </div>
+        <div class="intro-img">
+          <img src="assets/img/javascript.svg" alt="Logo de HTML, CSS e JS." />
+        </div>
+      </div>
+    </section>
+
+    <section id="intro" class="white-bg2 section">
+      <div class="main-content">
+        <center><h2 class="upercs">Genilson do Carmo</h2></center>
+<img class="Foto" src="assets/img/rdimp.png " alt="Foto de perfil de Genilson do Carmo o autor da pagina, esta com filtro estilo pintura impressionista, tons azul e amarelo  .">
+        <p>
+          <strong> 31 anos 
+          <br> Moro em Sorocaba</strong>
+          <br> 🤵🏻‍♂️👸🏼 Casado
+        </p>
+        <p>Nordestinho:  Maranhense </p> 
+        <p>Sol no signo de <strong> Escorpião</strong> ♏️</p>
+
+        <p>          
+          <strong>👨🏻‍💻 Estudante</strong><br> FATEC de Análise e Desenvolvimento de Sistemas 
+                   
+        </p>
+        
+        <p>
+          <strong> Gosto de</strong> fazer uma caminhada 🚶🏻‍♂️<br> Correr 🏃🏻‍♂️<br> Academia 🏋🏽‍♂️ <br> E claro né, tem que comer bastente para repor as gorduras 🍖🍫.
+         <br><strong> Aos tempos livres</strong>, gosto de:</br>
+          • ✈️ Viajar<br>
+          • 📺 Assistir anime/filmes<br>
+          • 🤷🏻‍♂️ Assistir videos aleatórios<br>
+          •	🗣️ Conversar<br>
+          •	☕️ 🍰 Sair para tomar um café<br>
+          • 🎣 Pescar<br>
+          • 🍱 Sair para comer        
+        </p>
+
+        
+      </div>
+    </section>
+
+    <section id="grid-one" class="grid-one minimalist-bg section">
+      <div class="main-content grid-one-content">
+        <h2 class="upercs">Profissional</h2>
+        <p class="grid-description">Uma breve descrição.</p>
+
+        <div class="grid">
+          <article>
+            <h3>TOYOTA</h3>
+            
+              <strong>Montador de máquinas</strong> 
+            
+               <br>• TPS - Sistema Toyota de produção
+               <br>• Metodologia kaizen
+               <br>• 5S/4S+S
+               <br>• Atividades em equipe
+               <br>• Liderança de equipe multifuncional
+               <br>• Ferramentas de gerenciamento como quadro
+               <br>• KPIs
+               <br>• Kankan
+               <br>• Gráficos (Pareto, Ishikawa, radar).
+              <br>
+              <strong> Realizações</strong>:<br>
+              Em 2018 viajei para o Japão 
+              <br>representar o Brasil no Toyota Skill Contest 2018.
+              
+            </p>
+          </article>
+          <article>
+            <h3>Frango Assado</h3>
+            <p>
+              <strong>Frentista</strong>
+               <br />Abastecimento e venda de combustíveis, lubrificantes, acessórios;
+                Divulgação das promoções, trocador de óleo e borracheiro.
+              Participei de treinamentos de qualidade de atendimento, 
+              estratégias de venda de produtos automotivos, 
+              combustíveis e derivados de petróleo, segurança e cidadania.
+              
+            </p>
+          </article>
+          <!-- <article>
+            <h3>xxxx/xxxx</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+              cum delectus molestias. Atque doloribus nobis laudantium esse ut,
+              non commodi maxime distinctio veritatis unde, reprehenderit minus
+              ad dolores provident maiores.
+            </p>
+          </article> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="grid-one dinamic2-bg section">
+      <div class="main-content grid-one-content">
+        <h2 class="upercs">Projetos</h2>
+        <!-- <p class="grid-description">Projetos em desenvolvimento.</p> -->
+
+        <div class="grid">
+          <div class="gallery-img">
+            <a href="https://github.com/GenilsonDC/Academico/tree/main/Fatec/Meu_Empreendimento" target="_blank">
+            <img class="ga"
+              src="assets/img/ProjMeuempreendiemento1.gif"
+              alt="Imagem do projeto Meu Meu Empreendimento desenvolvido em Swift, tem um iPhone 14pro com a tela de login"
+              
+            /></a>
+          </div>
+          <div class="gallery-img">
+            <img class="ga"
+            src="https://cdn.dribbble.com/users/2684157/screenshots/8075355/media/6c4591a027cd5d9e9c01cb6705576751.gif"
+            alt="Gif dizendo under construction, traduzindo: Em construção "
+
+            />
+          </div>
+          <div class="gallery-img">
+            <img class="ga"
+            src="https://cdn.dribbble.com/users/2684157/screenshots/8075355/media/6c4591a027cd5d9e9c01cb6705576751.gif"
+              alt="Gif dizendo under construction, traduzindo: Em construção "
+            />
+          <!-- </div>
+          <div class="gallery-img">
+            <img class="ga"
+            src="https://cdn.dribbble.com/users/2684157/screenshots/8075355/media/6c4591a027cd5d9e9c01cb6705576751.gif"
+            alt="random image from unsplash"
+            /> -->
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="grid-two" class="grid-one habilidades-bg  section">
+      <div class="main-content grid-one-content">
+        <!-- <h2 class="upercs">habilidades</h2> -->
+    
+        <img class="hbl" src="assets/img/habilidades.gif" alt="Gif grande contendo as habilidades com estrilinhas que vai de 0 a 5 estrelas para cada liguagem de programacao, banco de dados e ferramentas ">      
+          <h2> Never settle! </h2>            
+          
+        </div>
+    </section>
+    <section id="contact" class="intro minimalist2-bg  section">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>Fim!!</h2>
+          <p>
+            Esse Portifólio é um desafio acadêmico da matéria de PWEB FATEC Sorocaba ministrada pela 
+            <a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/denilce-veloso-a77b7923/">
+               <strong>Professora Denilce Veloso</strong> 
+            </a>
+               A princípio tem muita informação muitos elementos. 
+              <br>Para alguns pode ser – "Nossa que top 🤩!!"
+              Para outros – "Jesus que exagero!!"
+              <br>👨🏻‍💻 Mas vou trabalhando nele.
+
+          </p>
+        </div>
+        <div class="intro-img">
+          <img src="assets/img/javascript.svg" alt="Logo de HTML, CSS e JS." />
+        </div>
+        <div class="contact-form">
+          <fieldset class="form-grid">
+            <legend>Entre em contato / Contact me.</legend>
+
+            
+      
+        
+            <div class="form-group">
+              <label for="first-name">Nome</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Nome/name"
+              />
+            </div>
+        
+            <div class="form-group">
+              <label for="last-name">Sobrenome</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Sobrenome/last name"
+              />
+            </div>
+        
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="meu_email@email.com"
+              />
+            </div>
+        
+            <div class="form-group full-width">
+              <label for="message">Mensagem</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Texto de exemplo.
+                Ola Genilson, tudo bem?
+                Quero te contratar para o meu time!"
+              ></textarea>
+            </div>
+        
+            <div class="form-group full-width">
+              <button id="submit-btn" type="submit">Enviar 📨</button>
+            </div>
+          </fieldset>
+        </div> 
+        
+      </div>
+    </section>
+
+    <footer id="footer" class="footer white-bg2">
+      <p>
+        <a rel="nofollow" target="_blank" href="https://github.com/GenilsonDC">
+          V 1.0 <br>Visite minha pagino no Github <br />
+           <span class="coroa">👑</span> GENILSON DO CARMO<br />
+         Developed in 2023</a
+        >
+      </p>
+    </footer>
+
+    <a class="back-to-top" href="#">⇧</a>
+    <script type="text/javascript" src="portifolio.js"></script>
+
+  </body>
+</html>
