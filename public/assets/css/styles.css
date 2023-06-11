@@ -38,6 +38,7 @@
   flex-flow: column wrap;
   justify-content: center;
   min-height: 100vh;
+  align-items: center;
 }
 
 .grid-main-heading {
@@ -73,10 +74,10 @@
   transform: rotate(5deg);
 }
 .hbl {
-  padding-left: 4%;
-  max-width: 510px;
+  max-width: 590px;
   max-height: 1100px;
 }
+
 .Foto {
   padding-left: 4%;
   max-width: 400px;
@@ -170,14 +171,6 @@
   font-size: 1.6rem;
 }
 
-.footer a {
-  color: var(--primary-color);
-}
-
-.coroa {
-  color: var(--secondary-color);
-}
-
 .footer p {
   margin: 0;
   padding: 3rem;
@@ -214,7 +207,11 @@
   font-family: "Press Start 2P", cursive;
   color: var(--blue-color);
 }
+.h3pro {
+  text-shadow: rgb(148, 179, 221) 0.1em 0.1em 0.1em;
 
+  color: rgb(3, 36, 126);
+}
 @media (max-width: 800px) {
   .intro-content,
   .grid {

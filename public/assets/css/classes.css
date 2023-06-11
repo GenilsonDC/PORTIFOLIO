@@ -1,0 +1,78 @@
+.main-bg {
+  background-image: url("../img/nevo4.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+}
+
+.habilidades-bg {
+  /* background-image: url("../img/vetor3.jpg"); */
+
+  /* background-image: url("https://i.pinimg.com/originals/5c/ad/df/5caddf7c21d3d983ad523210934ad8b4.gif"); */
+  background-size: cover;
+  background-position: center top;
+  color: var(--white-color);
+}
+
+.nevocinza-bg {
+  background-image: url("../img/nevo2.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+}
+.nevoroxo-bg {
+  background-image: url("../img/nevo.jpeg");
+  background-size: cover;
+  background-position: center top;
+  color: var(--white-color);
+}
+.nevoazul-bg {
+  background-image: url("../img/nevo5.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+.nevoamarelo-bg {
+  /* background: var(--white-color); */
+  background-image: url("../img/nevo3.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: var(--primary-color);
+}
+.dinamic-bg {
+  background-image: url("https://i.pinimg.com/originals/17/14/09/1714094bc5087f6913aab2618876e0fc.gif");
+
+  background-size: 110%;
+  background-position: center center;
+}
+.dinamic2-bg {
+  background-image: url("https://i.pinimg.com/originals/3d/0f/93/3d0f93241b4bbed25f03bcb95f5aae63.gif");
+  background-size: 95%;
+  background-position: center left;
+  color: var(--white-color);
+}
+.dinamic3-bg {
+  background-image: url("https://i.pinimg.com/originals/1d/27/d1/1d27d1130a805798a18f63355b632042.gif");
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+}
+
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem var(--gap);
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.menu-spacing {
+  height: 65px;
+}
+
+body .full-width {
+  width: 100%;
+  flex: 1 1 100%;
+}
