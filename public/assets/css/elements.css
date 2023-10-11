@@ -28,6 +28,7 @@ h6 {
 }
 
 h1 {
+  color: var(--Black-color);
   font-size: 6rem;
   text-transform: uppercase;
 }
@@ -63,7 +64,7 @@ a :hover {
   color: var(--blue-color);
 }
 h3 {
-  color: white;
+  color: var(--white-color);
 }
 
 h2 {

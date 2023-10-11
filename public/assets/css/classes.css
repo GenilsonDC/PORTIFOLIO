@@ -1,5 +1,5 @@
 .main-bg {
-  background-image: url("../img/nevo4.jpg");
+  background-image: url("../img/nevore.jpg");
   background-size: cover;
   background-position: center;
   color: var(--white-color);
@@ -14,31 +14,6 @@
   color: var(--white-color);
 }
 
-.nevocinza-bg {
-  background-image: url("../img/nevo2.jpeg");
-  background-size: cover;
-  background-position: center;
-  color: var(--white-color);
-}
-.nevoroxo-bg {
-  background-image: url("../img/nevo.jpeg");
-  background-size: cover;
-  background-position: center top;
-  color: var(--white-color);
-}
-.nevoazul-bg {
-  background-image: url("../img/nevo5.jpg");
-  background-size: cover;
-  background-position: center center;
-  color: var(--white-color);
-}
-.nevoamarelo-bg {
-  /* background: var(--white-color); */
-  background-image: url("../img/nevo3.jpg");
-  background-size: cover;
-  background-position: center center;
-  color: var(--primary-color);
-}
 .dinamic-bg {
   background-image: url("https://i.pinimg.com/originals/17/14/09/1714094bc5087f6913aab2618876e0fc.gif");
 
@@ -59,7 +34,7 @@
 }
 
 .main-content {
-  max-width: 120rem;
+  max-width: 250rem;
   margin: 0 auto;
   padding: 10rem var(--gap);
 }
