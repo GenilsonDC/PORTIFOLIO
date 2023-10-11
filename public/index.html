@@ -1,89 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta name="author" content="Genilson do Carmo">
+    <meta name="description" content=" Genilson's Portfolio with bio and skills">
+    <meta name="keywords" content="Swift, web, portifolio, código, html">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.4.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.4.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/paletaCores.css" />
+    <link rel="stylesheet" href="assets/css/elements.css" />
+    <link rel="stylesheet" href="assets/css/classes.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="shortcut icon" href="assets/img/ico/GC.png" />
+    <title>Genilson do Carmo</title>
   </head>
+
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  
+    <input
+      id="close-menu"
+      class="close-menu"
+      type="checkbox"
+      aria-label="Close menu"
+      role="button"
+    />
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu dinamic-bg">
+      <div class="main-content menu-content">
+        <h1 onclick="getElementById('close-menu').checked = false;">
+          <a href="https://www.instagram.com/genilson_carmo"  target="_blank"
+            ><img class="imgmenu" src="assets/img/insta.png" alt="icone do instagram, se clicar vai pro perfil de Genilson do Carmo" />
+          </a>
+          <a href="https://github.com/GenilsonDC" target="_blank"
+            ><img class="imgmenu" src="assets/img/github.png" alt="icone do Github, se clicar vai pro perfil de Genilson do Carmo" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/genilson-do-carmo-8a42b89a/"
+            target="_blank"
+            ><img class="imgmenu" src="assets/img/likdn.png" alt="icone do linkedin, se clicar vai pro perfil de Genilson do Carmo"  />
+          </a>
+        </h1>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        <nav>
+          <ul onclick="getElementById('close-menu').checked = false;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#intro">about me</a></li>
+            <li><a href="#gallery">Projects</a></li>
+            <li><a href="#grid-two">Skills</a></li>
+            <!-- <li><a href="#pricing">EEEEE</a></li> -->
+            <li><a href="#contact">Contact me</a></li>
+          </ul>
+             
+        </nav>
+          <!--  _________________ RELÓGIO _________________________-->
+          <div id="clock">
+              
+            <script>
+             function updateClock() {
+                var now = new Date();
+                var hours = String(now.getHours()).padStart(2, "0");
+                var minutes = String(now.getMinutes()).padStart(2, "0");
+                var seconds = String(now.getSeconds()).padStart(2, "0");
+                var date = now.toLocaleDateString();
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+                var time = hours + ":" + minutes + ":" + seconds;
+                var clockElement = document.getElementById("clock");
+                clockElement.innerHTML = date + " " + time;
+
+                setTimeout(updateClock, 1000); // Atualiza a cada segundo
+              }
+
+              updateClock(); // Inicia o relógio ao carregar a página   
+            </script>  
+          </div>
+          <!--  _________________ RELÓGIO _________________________-->
+      </div>
+    </aside>
+   
+   
+    <section id="home" class="intro main-bg section">
+
+   
+      <div class="main-content intro-content">
+        <br>
+        <div class="intro-text-content">
+
+      <div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="genilson-do-carmo" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://br.linkedin.com/in/genilson-do-carmo?trk=profile-badge">Genilson do Carmo</a></div>
+               
+
+      <br> <h1>Desculpe o transtorno 🐘
+        <br>🚧 em reforma 🚧 </h1> </br>
+
+       
+
+          </h1>
+
+          <p><h4 class="agradecimento">Desde já, <br>agradeço pela visita ❤️‍🔥</h4><br /></p>
+        </div>
+        <div class="intro-img">
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="gallery" class="grid-one dinamic2-bg section">
+      <div class="main-content grid-one-content">
+        <h2 class="upercs">Projetos</h2>
+        <!-- <p class="grid-description">Projetos em desenvolvimento.</p> -->
+
+        <div class="grid">
+          <div class="gallery-img">
+            <a href="https://github.com/GenilsonDC/iOS" target="_blank">
+            <img class="ga"
+              src="assets/img/ProjMeuempreendiemento1.gif"
+              alt="Imagem do projeto Meu Meu Empreendimento desenvolvido em Swift, tem um iPhone com a tela de login"
+              
+            /></a>
+          </div>
+          <div class="gallery-img">
+            <a href="https://github.com/GenilsonDC/React-Native/tree/main/App_FATEC" target="_blank"/>
+            <img class="ga"
+            src="https://github.com/GenilsonDC/React-Native/blob/main/App_FATEC/Documentation/DesckTopappFatec.gif?raw=true"
+            alt="Gif de projeto em React e React Native "
+
+            />
+          </div>
+          <div class="gallery-img">
+            <a href="https://github.com/GenilsonDC/React-Native/tree/main/App_FATEC" target="_blank"/>
+
+            <img class="ga"
+            src="https://github.com/GenilsonDC/React-Native/blob/main/App_FATEC/Documentation/app_Fatec.gif?raw=true"
+              alt="Gif dizendo under construction, traduzindo: Em construção "
+            /> 
+          <!-- </div>
+          <div class="gallery-img">
+            <img class="ga"
+            src="https://cdn.dribbble.com/users/2684157/screenshots/8075355/media/6c4591a027cd5d9e9c01cb6705576751.gif"
+            alt="random image from unsplash"
+            /> -->
+          
+        </div>
+      </div>
+    </section>
+
+   
+    
+  
+
+    <footer id="footer" class="footer dinamic3-bg">
+      <p>
+        <a rel="nofollow" target="_blank" href="https://github.com/GenilsonDC">
+           GENILSON DO CARMO<br>
+          2023
+         </a>
+      </p>
+    </footer>
+
+    <a class="back-to-top" href="#">⇧</a>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="portifolio.js"></script>
+
   </body>
 </html>
