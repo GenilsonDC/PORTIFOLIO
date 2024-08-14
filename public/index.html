@@ -1,172 +1,456 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <meta name="author" content="Genilson do Carmo">
-    <meta name="description" content=" Genilson's Portfolio with bio and skills">
-    <meta name="keywords" content="Swift, web, portifolio, código, html">
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/paletaCores.css" />
-    <link rel="stylesheet" href="assets/css/elements.css" />
-    <link rel="stylesheet" href="assets/css/classes.css" />
-    <link rel="stylesheet" href="assets/css/menu.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="shortcut icon" href="assets/img/ico/GC.png" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/cards.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/carrocel.css" /> -->
     <title>Genilson do Carmo</title>
   </head>
 
-  <body>
-  
-    <input
-      id="close-menu"
-      class="close-menu"
-      type="checkbox"
-      aria-label="Close menu"
-      role="button"
-    />
-    <label class="close-menu-label" for="close-menu" title="close menu"></label>
-    <aside class="menu dinamic-bg">
-      <div class="main-content menu-content">
-        <h1 onclick="getElementById('close-menu').checked = false;">
-          <a href="https://www.instagram.com/genilson_carmo"  target="_blank"
-            ><img class="imgmenu" src="assets/img/insta.png" alt="icone do instagram, se clicar vai pro perfil de Genilson do Carmo" />
-          </a>
-          <a href="https://github.com/GenilsonDC" target="_blank"
-            ><img class="imgmenu" src="assets/img/github.png" alt="icone do Github, se clicar vai pro perfil de Genilson do Carmo" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/genilson-do-carmo-8a42b89a/"
-            target="_blank"
-            ><img class="imgmenu" src="assets/img/likdn.png" alt="icone do linkedin, se clicar vai pro perfil de Genilson do Carmo"  />
-          </a>
-        </h1>
+  <body class="cms-page-view cms-central-de-atendimento">
+    <div class="wrapper">
+      <noscript>
+        <div class="global-site-notice noscript">
+          <div class="notice-inner">
+            <p>
+              <strong>JavaScript seems to be disabled in your browser.</strong
+              ><br />
+              Você precisa habilitar o Javascript no seu navegador para
+              aproveitar as funcionalidades do site.
+            </p>
+          </div>
+        </div>
+      </noscript>
+      <div class="page">
+        <header>
+          <!-- <div class="top_info">
+            <div class="container">
+              <ul>
+                <li style="color: #faf0e6">ENTRE EM CONTATO E SAIBA MAIS</li>
+                <li style="color: #faf0e6">📞 15992592634</li>
+                <li style="color: #faf0e6">
+                  📨 comercialgenilsondocarmo@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div> -->
+          <div class="header">
+            <div class="header_content" id="header">
+              <div class="container">
+                <div class="logo">
+                  <a href="#">
+                    <img
+                      src="./assets/img/RoyalTech.png"
+                      alt="Genilson"
+                      title="Genilson"
+                      height="100px"
+                      width="100px"
+                    />
+                  </a>
+                </div>
+                <div class="header_bar">
+                  <nav class="menu">
+                    <ul>
+                      <li class="ativo">
+                        <a class="opc_menu tra" href="#"> Home </a>
+                      </li>
+                      <li class="nativo">
+                        <a class="opc_menu tra" href="#servicos"> Serviços </a>
+                      </li>
+                      <li class="ativo">
+                        <a class="opc_menu tra" href="#"> Portifólio </a>
+                      </li>
+                      <li class="ativo">
+                        <a class="opc_menu tra" href="#"> Royal Tech </a>
+                      </li>
+                      <li>
+                        <a class="opc_menu tra" href="/blog"> BLOG </a>
+                      </li>
+                      <li>
+                        <a
+                          class="cta-button"
+                          href="https://wa.me/5515992592634"
+                          target="_blank"
+                        >
+                          Entrar em contato
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
 
-        <nav>
-          <ul onclick="getElementById('close-menu').checked = false;">
-            <li><a href="#">Home</a></li>
-            <li><a href="#intro">about me</a></li>
-            <li><a href="#gallery">Projects</a></li>
-            <li><a href="#grid-two">Skills</a></li>
-            <!-- <li><a href="#pricing">EEEEE</a></li> -->
-            <li><a href="#contact">Contact me</a></li>
-          </ul>
-             
-        </nav>
-          <!--  _________________ RELÓGIO _________________________-->
-          <div id="clock">
-              
-            <script>
-             function updateClock() {
-                var now = new Date();
-                var hours = String(now.getHours()).padStart(2, "0");
-                var minutes = String(now.getMinutes()).padStart(2, "0");
-                var seconds = String(now.getSeconds()).padStart(2, "0");
-                var date = now.toLocaleDateString();
+            <div class="wpp_float tra">
+              <a
+                href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5515992592634"
+                target="blank"
+              >
+                <img class="tra" height="35" src="./assets/img/whatsapp.png" />
+              </a>
+              </div>
+              <div class="std">
+              <div class="central_blc_duvidas" id="servicos">
+                <div class="tit_page">
+                  <h1>Serviços</h1>
+                  <p>Conheça um pouco mais dos serviços oferecidos pela  Royal Tech </p>
+                </div>                
+                <div class="cardsContent">
+                    <div class="cardContainer">
+                      <div class="cardTopContainer">
+                        <div class="cardImagem">
+                          <img src="./assets/gifs/ecomerce.gif" alt="mobile" />
+                        </div>
+                      </div>
+                      <div class="midleCard">
+                        <div class="cardName">
+                          <h1>eComerce</h1>
+                        </div>
+                        <div class="cardValue">
+                          <h1>5555</h1>
+                        </div>
+                      </div>
+                      <div class="cardDescription">
+                        <h1>Descrição</h1>
+                      </div>
+                    </div>
+                    
 
-                var time = hours + ":" + minutes + ":" + seconds;
-                var clockElement = document.getElementById("clock");
-                clockElement.innerHTML = date + " " + time;
+                    <div class="cardContainer">
+                      <div class="cardTopContainer">
+                        <div class="cardImagem">
+                          <img src="./assets/gifs/LandingPage.gif" alt="mobile" />
+                        </div>
+                      </div>
+                      <div class="midleCard">
+                        <div class="cardName">
+                          <h1>Landing page</h1>
+                        </div>
+                        <div class="cardValue">
+                          <h1>5555</h1>
+                        </div>
+                      </div>
+                      <div class="cardDescription">
+                        <h1>Descrição</h1>
+                      </div>
+                    </div>
 
-                setTimeout(updateClock, 1000); // Atualiza a cada segundo
+                    <div class="cardContainer">
+                      <div class="cardTopContainer">
+                        <div class="cardImagem">
+                          <img src="./assets/gifs/mobileiphone.gif" alt="mobile" />
+                        </div>
+                      </div>
+                      <div class="midleCard">
+                        <div class="cardName">
+                          <h1>Mobile</h1>
+                        </div>
+                        <div class="cardValue">
+                          <h1>5555</h1>
+                        </div>
+                      </div>
+                      <div class="cardDescription">
+                        <h1>Descrição</h1>
+                      </div>
+                    </div>
+
+                   
+                    <div class="cardContainer">
+                      <div class="cardTopContainer">
+                        <div class="cardImagem">
+                          <img src="./assets/gifs/wordpress.gif" alt="mobile" />
+                        </div>
+                      </div>
+                      <div class="midleCard">
+                        <div class="cardName">
+                          <h1>Wordpress</h1>
+                        </div>
+                        <div class="cardValue">
+                          <h1>5555</h1>
+                        </div>
+                      </div>
+                      <div class="cardDescription">
+                        <h1>Descrição</h1>
+                      </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            </div>
+
+          <div class="central_atendimento">
+            <div class="container">
+              <div class="tit_page">
+                <h1>Royal Tech</h1>
+              </div>
+
+              <div class="central_blc_b" id="faq">
+                <div class="icon_central">
+                  <img
+                    width="700"
+                    src="./assets/img/atendimentopersonalizado.png"
+                  />
+                </div>
+                <div class="central_blc_info">
+                  <div class="horario">
+                    Estou a sua disposição de
+                    <span>Domingo à Domingo</span> das
+                    <span>07h às 20h</span> para esclarecer qualquer dúvida
+                    sobre e discutir o melhor para sua necessidade.
+                  </div>
+                  <ul>
+                    <li class="info_email tra">
+                      <a href="mailto:comercialgenilsondocarmo@gmail.com">
+                        comercialgenilsondocarmo@gmail.com
+                      </a>
+                    </li>
+                    <li class="info_tel tra">
+                      <a href="tel:15992592634"> (15) 9 9259-2634 </a>
+                    </li>
+                    <li class="info_wpp tra">
+                      <a
+                        href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5515992592634"
+                      >
+                        15992592634
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p></p>
+        </div>
+
+        <footer
+          id="SiteFooter"
+          class="site-footer site-footer--wavy"
+          role="contentinfo"
+          data-section-id="sections--17049584173256__footer"
+          data-section-type="footer"
+        >
+          <div>
+            <style data-genilson="">
+              .site-footer {
+                --bg: #02203a;
+              }
+              .site-footer {
+                --text: #ffffff;
+                --text-alpha-15: rgba(255, 255, 255, 0.15);
+                --text-alpha-50: rgba(255, 255, 255, 0.6);
+                --text-alpha-85: rgba(255, 255, 255, 0.85);
+              }
+              .site-footer {
+                --border: #ffffff;
+              }
+              .genilson-section:last-child .section-padding {
+                padding-bottom: max(50px, var(--padding-bottom));
               }
 
-              updateClock(); // Inicia o relógio ao carregar a página   
-            </script>  
+              .footer-block {
+                --items-count: 3;
+              }
+            </style>
+
+            <div class="footer__svg">
+              <svg
+                viewBox="0 -20 700 100"
+                width="100%"
+                height="100"
+                preserveAspectRatio="none"
+              >
+                <path
+                  id="footer__svg--little-wave"
+                  transform="translate(0, -20)"
+                  d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700"
+                ></path>
+                <path
+                  id="footer__svg--big-wave"
+                  d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z"
+                ></path>
+              </svg>
+            </div>
           </div>
-          <!--  _________________ RELÓGIO _________________________-->
+          <div class="blc_ft">
+            <div class="container">
+              <div class="col logo_ft">
+                <a href="#">
+                  <img src="./assets/img/RoyalTech.png" title="Genilson" />
+                </a>
+              </div>
+              <div class="col">
+                <h2>A Royal Tech</h2>
+                <ul>
+                  <li>
+                    <a class="tra" href="#"> Sobre a Royal Tech </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col">
+                <h2>Serviços</h2>
+                <ul>
+                  <li>
+                    <a class="tra" href="#"> Mobile </a>
+                  </li>
+                  <li>
+                    <a class="tra" href="#/"> WEB </a>
+                  </li>
+                  <li>
+                    <a class="tra" href="#"> eCommerce </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <h2>Atendimento</h2>
+                <ul>
+                  <li>
+                    <a class="tra" href="#" id="helpcenter">
+                      Central de atendimento
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col form_pag">
+                <section class="base_newsletter">
+                  <div class="container">
+                    <div class="blc_social">
+                      <ul>
+                        <li>
+                          <a
+                            title="facebook"
+                            href="https://www.facebook.com/genilsonDC.royal.tech"
+                            target="_blank"
+                          >
+                            <svg
+                              class="svg-inline--fa fa-facebook-f fa-w-9 tra"
+                              aria-hidden="true"
+                              data-prefix="fab"
+                              data-icon="facebook-f"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 264 512"
+                              data-fa-i2svg=""
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"
+                              ></path>
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            title="instagram"
+                            href="https://www.instagram.com/genilson_carmo/"
+                            target="_blank"
+                          >
+                            <svg
+                              class="svg-inline--fa fa-instagram fa-w-14 tra"
+                              aria-hidden="true"
+                              data-prefix="fab"
+                              data-icon="instagram"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                              data-fa-i2svg=""
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            title="youtube"
+                            href="https://www.youtube.com/channel/UCboxCIeT60LPNWur8MrNWcg"
+                            target="_blank"
+                          >
+                            <svg
+                              class="svg-inline--fa fa-youtube fa-w-18 tra"
+                              aria-hidden="true"
+                              data-prefix="fab"
+                              data-icon="youtube"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 576 512"
+                              data-fa-i2svg=""
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <div class="container">
+              <p>
+                © 2024 - ROYAL TECH SERVICOS E SISTEMAS - CNPJ:
+                52.688.916/0001-80 - Sorocaba - São Paulo- Brasil
+              </p>
+              <a
+                href="https://www.linkedin.com/in/genilson-do-carmo/"
+                target="_blank"
+                class="royalTech"
+              >
+                <span>Powered by</span>
+                <img height="25" src="./assets/img/geeh.png" title="Genilson" />
+              </a>
+            </div>
+          </div>
+        </footer>
       </div>
-    </aside>
-   
-   
-    <section id="home" class="intro main-bg section">
+    </div>
 
-   
-      <div class="main-content intro-content">
-        <br>
-        <div class="intro-text-content">
+    <div id="fb-root" class="fb_reset">
+      <div
+        style="position: absolute; top: -10000px; width: 0px; height: 0px"
+      ></div>
+    </div>
+    <script>
+      let lastScrollPosition = 0;
 
-      <div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="genilson-do-carmo" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://br.linkedin.com/in/genilson-do-carmo?trk=profile-badge">Genilson do Carmo</a></div>
-               
+      window.addEventListener('scroll', () => {
+        const header = document.getElementById('header');
+        const scrollPosition = window.scrollY;
 
-      <br> <h1>Desculpe o transtorno 🐘
-        <br>🚧 em reforma 🚧 </h1> </br>
+        console.log(`Scroll position: ${scrollPosition}`);
 
-       
+        if (scrollPosition > 100 && scrollPosition > lastScrollPosition) {
+          // User is scrolling down
+          if (!header.classList.contains('hidden')) {
+            header.classList.add('hidden');
+            console.log('Adding hidden class');
+          }
+        } else {
+          // User is scrolling up or is near the top
+          if (header.classList.contains('hidden')) {
+            header.classList.remove('hidden');
+            console.log('Removing hidden class');
+          }
+        }
 
-          </h1>
-
-          <p><h4 class="agradecimento">Desde já, <br>agradeço pela visita ❤️‍🔥</h4><br /></p>
-        </div>
-        <div class="intro-img">
-        </div>
-      </div>
-    </section>
-
+        lastScrollPosition = scrollPosition;
+      });
+    </script>
+<script src="./assets/js/carrocel.js"></script>
     
-    <section id="gallery" class="grid-one dinamic2-bg section">
-      <div class="main-content grid-one-content">
-        <h2 class="upercs">Projetos</h2>
-        <!-- <p class="grid-description">Projetos em desenvolvimento.</p> -->
-
-        <div class="grid">
-          <div class="gallery-img">
-            <a href="https://github.com/GenilsonDC/iOS" target="_blank">
-            <img class="ga"
-              src="assets/img/ProjMeuempreendiemento1.gif"
-              alt="Imagem do projeto Meu Meu Empreendimento desenvolvido em Swift, tem um iPhone com a tela de login"
-              
-            /></a>
-          </div>
-          <div class="gallery-img">
-            <a href="https://github.com/GenilsonDC/React-Native/tree/main/App_FATEC" target="_blank"/>
-            <img class="ga"
-            src="https://github.com/GenilsonDC/React-Native/blob/main/App_FATEC/Documentation/DesckTopappFatec.gif?raw=true"
-            alt="Gif de projeto em React e React Native "
-
-            />
-          </div>
-          <div class="gallery-img">
-            <a href="https://github.com/GenilsonDC/React-Native/tree/main/App_FATEC" target="_blank"/>
-
-            <img class="ga"
-            src="https://github.com/GenilsonDC/React-Native/blob/main/App_FATEC/Documentation/app_Fatec.gif?raw=true"
-              alt="Gif dizendo under construction, traduzindo: Em construção "
-            /> 
-          <!-- </div>
-          <div class="gallery-img">
-            <img class="ga"
-            src="https://cdn.dribbble.com/users/2684157/screenshots/8075355/media/6c4591a027cd5d9e9c01cb6705576751.gif"
-            alt="random image from unsplash"
-            /> -->
-          
-        </div>
-      </div>
-    </section>
-
-   
-    
-  
-
-    <footer id="footer" class="footer dinamic3-bg">
-      <p>
-        <a rel="nofollow" target="_blank" href="https://github.com/GenilsonDC">
-           GENILSON DO CARMO<br>
-          2023
-         </a>
-      </p>
-    </footer>
-
-    <a class="back-to-top" href="#">⇧</a>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-   
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="module" src="portifolio.js"></script>
-
   </body>
 </html>
