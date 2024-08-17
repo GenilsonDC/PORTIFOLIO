@@ -1,0 +1,26 @@
+.carrocel-clientes {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 1%;
+  margin: 0;
+}
+
+.carrossel {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  0% {
+    transform: translateX(0);
+  }
+}

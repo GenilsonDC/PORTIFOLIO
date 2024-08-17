@@ -1,0 +1,71 @@
+/* Estilo para o menu hamburguer */
+@media (min-width: 355px) and (max-width: 860px) {
+  header .header_bar {
+    width: calc(90%);
+  }
+  .logo {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  .logo img {
+    width: 50%;
+    height: auto;
+  }
+
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .menu-icon div {
+    width: 35px;
+    height: 5px;
+    background-color: #826ae4;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 30px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .menu ul li {
+    margin: 10px;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    font-size: 18px;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu-icon.open div:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .menu-icon.open div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.open div:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}

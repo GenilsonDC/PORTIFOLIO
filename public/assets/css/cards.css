@@ -1,28 +1,70 @@
 .cardsContent {
-  width: 960px;
-  height: 623px;
+  width: 90%;
+  min-height: 60%;
+  max-height: 95%;
+  overflow-y: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: 255px;
-  margin-left: 247px;
+  padding: 1%;
+  align-items: center;
+  border-radius: 8px;
 }
 .cardContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 275px;
-  height: 344px;
+  width: 375px;
+  height: 461px;
+  min-height: 461px;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1352);
   background-color: #ffffff;
   margin: 0 11px 31px 11px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 8px;
+}
+.cardContainer-cliente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  min-width: 349px;
+  height: 275px;
+  min-height: 272px;
+
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1352);
+  background-color: #ffffff;
+  margin: 0 11px 31px 11px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.cardContainer-cliente .cardImagem {
+  height: 200px;
+}
+#wtr {
+  background-color: #ff6c9e;
+}
+
+#nautilus .cardImagem img {
+  height: 150px;
+  width: auto;
+  padding-top: 10%;
+}
+
+#nautilus {
+  background-color: #7a5dff;
+}
+.cardContainer:hover {
+  scale: 1.04;
+}
+.cardContainer-cliente:hover {
+  scale: 1.04;
 }
 
 .cardTopContainer {
   display: flex;
-  align-items: center;
+  align-items: self-start;
   justify-content: center;
   height: 80%;
   width: auto;
@@ -30,13 +72,12 @@
 }
 
 .cardImagem {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 .cardImagem img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
   border-radius: 8px 8px 0 0;
 }
 
@@ -48,7 +89,7 @@
   align-items: center;
 }
 
-.cardValue {
+/* .cardValue {
   margin-right: 11.56px;
   margin-left: 4px;
   margin-top: 3px;
@@ -68,27 +109,20 @@
   text-overflow: ellipsis;
   margin-left: 1px;
   color: #ffffff;
-
-  &::before {
-    content: 'R$';
-    position: relative;
-    right: 2px;
-  }
-}
+} */
 
 .cardName {
   align-content: center;
-  width: 124px;
+  width: 100%;
   height: 38px;
-  margin-left: 14px;
   top: 170px;
+  text-align: center;
 }
 
 .cardName h1 {
   font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-weight: 600;
+  font-size: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
@@ -96,17 +130,15 @@
 }
 
 .cardDescription {
-  width: 192px;
+  width: 100%;
   height: 25px;
-  margin-right: 11.56px;
   margin-top: 8px;
-  margin-left: 14px;
+  text-align: center;
 }
 .cardDescription h1 {
   font-family: 'Montserrat';
-  font-weight: 300;
-  font-size: 10px;
-  line-height: 12px;
+  font-weight: 400;
+  font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
