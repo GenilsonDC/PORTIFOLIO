@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://royal-tech-ss.web.app/assets/img/RoyalTech.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/cards.css" />
     <link rel="stylesheet" href="./assets/css/carrocelCliente.css" />
@@ -44,8 +45,8 @@
                     <ul>
                       <li class="ativo"><a class="opc_menu tra" href="#">Home</a></li>
                       <li class="ativo"><a class="opc_menu tra" href="#servicos">Serviços</a></li>
-                      <li class="ativo"><a class="opc_menu tra" href="#">Portifólio</a></li>
-                      <li class="ativo"><a class="opc_menu tra" href="#">Royal Tech</a></li>
+                      <li class="ativo"><a class="opc_menu tra" href="#clientes">Clientes</a></li>
+                      <li class="ativo"><a class="opc_menu tra" href="#atendimento">Royal Tech</a></li>
                       <li><a class="cta-button" href="https://wa.me/5515992592634" target="_blank">Entrar em contato</a></li>
                     </ul>
                   </nav>
@@ -72,7 +73,8 @@
                   <p>Conheça um pouco mais dos serviços oferecidos. </p>
                 </div>                
                 <div class="cardsContent">
-                    <div class="cardContainer">
+
+                    <div class="cardContainer" id="ecomerce">
                       <div class="cardTopContainer">
                         <div class="cardImagem">
                           <img src="./assets/gifs/ecomerce.gif" alt="eComerce" />
@@ -107,7 +109,7 @@
                       </div>
                     </div>
 
-                    <div class="cardContainer">
+                    <div class="cardContainer" id="mobileService">
                       <div class="cardTopContainer">
                         <div class="cardImagem">
                           <img src="./assets/gifs/mobileiphone.gif" alt="mobile phones" />
@@ -124,6 +126,22 @@
                       </div>
                     </div>
 
+                    <div class="cardContainer" id="webservice">
+                      <div class="cardTopContainer">
+                        <div class="cardImagem">
+                          <img src="./assets/gifs/website.gif" alt="Paginas web" />
+                        </div>
+                      </div>
+                      <div class="midleCard">
+                        <div class="cardName">
+                          <h1>Pagina WEB</h1>
+                        </div>
+                        
+                      </div>
+                      <div class="cardDescription">
+                        <h1>Criação e reestilização</h1>
+                      </div>
+                    </div>
                    
                     <div class="cardContainer">
                       <div class="cardTopContainer">
@@ -150,8 +168,9 @@
             </div>
 
           <div class="central_atendimento">
+
             <div class="container">
-              <div class="tit_page">
+              <div class="tit_page" id="clientes">
                 <h4> <span>N</span>ossos  <span>C</span>lientes</h4>
               </div>
              
@@ -228,7 +247,7 @@
                   />
                 </div>
                 <div class="central_blc_info">
-                  <div class="horario">
+                  <div class="horario" id="atendimento">
                     <p>
                     Estou a sua disposição de
                     <span>Segunda à Sexta</span> das
@@ -344,7 +363,10 @@
                 <h2>A Royal Tech</h2>
                 <ul>
                   <li>
-                    <a class="tra" href="#"> Sobre a Royal Tech </a>
+                    <a class="tra" href="#atendimento"> Sobre a Royal Tech </a>
+                  </li>
+                  <li>
+                    <a class="tra" href="#clientes"> Clientes </a>
                   </li>
                 </ul>
               </div>
@@ -353,13 +375,13 @@
                 <h2>Serviços</h2>
                 <ul>
                   <li>
-                    <a class="tra" href="#"> Mobile </a>
+                    <a class="tra" href="#mobileService"> Mobile </a>
                   </li>
                   <li>
-                    <a class="tra" href="#/"> WEB </a>
+                    <a class="tra" href="#webservice"> WEB </a>
                   </li>
                   <li>
-                    <a class="tra" href="#"> eCommerce </a>
+                    <a class="tra" href="#ecomerce"> eCommerce </a>
                   </li>
                 </ul>
               </div>
@@ -367,7 +389,7 @@
                 <h2>Atendimento</h2>
                 <ul>
                   <li>
-                    <a class="tra" href="#" id="helpcenter">
+                    <a class="tra" href="#atendimento" id="helpcenter">
                       Central de atendimento
                     </a>
                   </li>

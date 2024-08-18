@@ -704,7 +704,6 @@ header .header_bar {
   height: 45px;
   background-color: #826ae4;
   box-shadow: 1px 1px 6px #000;
-
   color: #e7e7e7;
   text-align: center;
   line-height: 45px;
@@ -851,10 +850,10 @@ header .menu li a.opc_menu:hover {
 .wpp_float {
   position: fixed;
   bottom: 50px;
-  right: 110px;
+  right: 5%;
   border: 1px inset #f4ca64;
   border-radius: 50px;
-  background-color: #3d3d3d;
+  background-color: #ffffff;
   width: 52px;
   height: 52px;
   text-align: center;
@@ -862,7 +861,8 @@ header .menu li a.opc_menu:hover {
 }
 
 .wpp_float:hover {
-  background-color: #ffffff;
+  background-color: #040020;
+  scale: 1.3;
 }
 
 .wpp_float a {
@@ -1659,100 +1659,6 @@ footer .copyright .royalTech {
 
 .central_blc_info ul li.info_wpp a {
   background-image: url('../img/whatsapp.png');
-}
-
-.base_parcerias {
-  float: left;
-  width: 100%;
-  background-image: url('../images/fundo_atendimento.png');
-  background-position: center;
-  padding: 35px 0px;
-  text-align: center;
-}
-
-.base_parcerias .blc_par {
-  display: inline-block;
-  background-color: #ffffff;
-  padding: 35px 80px;
-  max-width: 100%;
-}
-
-.base_parcerias .blc_par h1 {
-  display: inline-block;
-  vertical-align: middle;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  font-size: 35px;
-  font-weight: 400;
-  color: #000000;
-}
-
-.base_parcerias .blc_par p {
-  width: 600px;
-  max-width: 100%;
-  margin-top: 30px;
-  margin-bottom: 45px;
-  font-size: 15px;
-  font-weight: 400;
-  color: #1d1915;
-}
-
-.base_parcerias .blc_par a {
-  display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  padding: 0px 35px;
-  background-color: #0b0b0b;
-  cursor: pointer;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 13px;
-  margin-left: 10px;
-  letter-spacing: 1px;
-  border: 1px solid transparent;
-}
-
-.base_parcerias .blc_par a:hover {
-  border: 1px solid #0b0b0b;
-  background-color: #ffffff;
-  color: #0b0b0b;
-}
-
-.flt_parceria {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 110;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.bg_flt_par {
-  float: left;
-  width: 100%;
-  height: 100%;
-}
-
-.fecha_flt_par {
-  position: absolute;
-  top: -50px;
-  right: 0;
-  background-color: #ffffff;
-  padding: 4px 35px;
-  text-transform: uppercase;
-  font-size: 15px;
-  color: #1d1915;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-.fecha_flt_par:hover {
-  background-color: #0b0b0b;
-  color: #ffffff;
 }
 
 /****************** SOBRE NOS ******************/
