@@ -1446,10 +1446,6 @@ footer .copyright .royalTech {
 .banner_sobre {
   float: left;
   width: 100%;
-  /*    background-image: url('../images/sobre/fundo_topo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;*/
 }
 
 .col_voltar {
@@ -1487,46 +1483,6 @@ footer .copyright .royalTech {
 
 .img_bn_sbr img {
   margin-bottom: -4px;
-}
-
-.base_info_kustom {
-  float: left;
-  width: 100%;
-  padding: 0% 15%;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  border-top: 1px solid #e5e5e5;
-  margin-top: 65px;
-}
-
-.base_info_kustom ul li {
-  float: left;
-  width: 33.333%;
-  text-align: center;
-}
-
-.base_info_kustom ul li .icon_kuston {
-  float: left;
-  width: 100%;
-  text-align: center;
-  height: 55px;
-}
-
-.base_info_kustom ul li img {
-  display: inline-block;
-  height: 55px;
-}
-
-.base_info_kustom ul li h3 {
-  float: left;
-  width: 100%;
-  color: #0e0e0e;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 10px;
-  height: 65px;
-  padding: 0% 20%;
 }
 
 .base_contato_kustom {
@@ -1693,10 +1649,6 @@ div.inchoo-socialconnect-facebook {
 
   .img_bn_sbr {
     width: calc(35% - 3px);
-  }
-
-  .base_info_kustom ul li h3 {
-    padding: 0% 5%;
   }
 
   .footer__svg2 {
