@@ -1,5 +1,5 @@
 /* Estilo para o menu hamburguer */
-@media (min-width: 355px) and (max-width: 860px) {
+@media (min-width: 55px) and (max-width: 860px) {
   header .header_bar {
     width: calc(90%);
   }

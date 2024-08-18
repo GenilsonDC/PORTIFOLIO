@@ -1614,6 +1614,13 @@ div.inchoo-socialconnect-facebook {
     display: none;
   }
 
+  .cta-button {
+    width: 270px;
+    padding-left: 15px;
+    background-position: center left 5px;
+    background-size: auto 25px;
+  }
+
   .central_atendimento {
     padding: 0;
     margin: 0;
