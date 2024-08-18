@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/cards.css" />
-    <link rel="stylesheet" href="./assets/css/carrocelCliente.css" />
-    <link rel="stylesheet" href="./assets/css/menumobile.css" />
+    <link rel="shortcut icon" href="https://royal-tech-ss.web.app/assets/img/RoyalTech.png" type="image/x-icon">
+    <link rel="stylesheet" href="./public/assets/css/styles.css" />
+    <link rel="stylesheet" href="./public/assets/css/cards.css" />
+    <link rel="stylesheet" href="./public/assets/css/carrocelCliente.css" />
+    <link rel="stylesheet" href="./public/assets/css/menumobile.css" />
     <title>Genilson do Carmo</title>
   </head>
 
@@ -31,7 +32,7 @@
               <div class="container">
                 <div class="logo">
                   <a href="#">
-                    <img src="./assets/img/geeh.png" alt="Genilson" title="Genilson" height="100px" width="100px" />
+                    <img src="./public/assets/img/geeh.png" alt="Genilson" title="Genilson" height="100px" width="100px" />
                   </a>
                 </div>
                 <div class="header_bar">
@@ -44,8 +45,8 @@
                     <ul>
                       <li class="ativo"><a class="opc_menu tra" href="#">Home</a></li>
                       <li class="ativo"><a class="opc_menu tra" href="#servicos">Serviços</a></li>
-                      <li class="ativo"><a class="opc_menu tra" href="#">Portifólio</a></li>
-                      <li class="ativo"><a class="opc_menu tra" href="#">Royal Tech</a></li>
+                      <li class="ativo"><a class="opc_menu tra" href="#clientes">Clientes</a></li>
+                      <li class="ativo"><a class="opc_menu tra" href="#atendimento">Royal Tech</a></li>
                       <li><a class="cta-button" href="https://wa.me/5515992592634" target="_blank">Entrar em contato</a></li>
                     </ul>
                   </nav>
@@ -60,7 +61,7 @@
                 href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5515992592634"
                 target="blank"
               >
-                <img class="tra" height="35" src="./assets/img/whatsapp.png" />
+                <img class="tra" height="35" src="./public/assets/img/whatsapp.png" />
               </a>
               </div>
               <div class="std">
@@ -72,10 +73,11 @@
                   <p>Conheça um pouco mais dos serviços oferecidos. </p>
                 </div>                
                 <div class="cardsContent">
-                    <div class="cardContainer">
+
+                    <div class="cardContainer" id="ecomerce">
                       <div class="cardTopContainer">
                         <div class="cardImagem">
-                          <img src="./assets/gifs/ecomerce.gif" alt="eComerce" />
+                          <img src="./public/assets/gifs/ecomerce.gif" alt="eComerce" />
                         </div>
                       </div>
                       <div class="midleCard">
@@ -93,7 +95,7 @@
                     <div class="cardContainer">
                       <div class="cardTopContainer">
                         <div class="cardImagem">
-                          <img src="./assets/gifs/LandingPage.gif" alt="Landing page" />
+                          <img src="./public/assets/gifs/LandingPage.gif" alt="Landing page" />
                         </div>
                       </div>
                       <div class="midleCard">
@@ -107,10 +109,10 @@
                       </div>
                     </div>
 
-                    <div class="cardContainer">
+                    <div class="cardContainer" id="mobileService">
                       <div class="cardTopContainer">
                         <div class="cardImagem">
-                          <img src="./assets/gifs/mobileiphone.gif" alt="mobile phones" />
+                          <img src="./public/assets/gifs/mobileiphone.gif" alt="mobile phones" />
                         </div>
                       </div>
                       <div class="midleCard">
@@ -124,11 +126,27 @@
                       </div>
                     </div>
 
+                    <div class="cardContainer" id="webservice">
+                      <div class="cardTopContainer">
+                        <div class="cardImagem">
+                          <img src="./public/assets/gifs/website.gif" alt="Paginas web" />
+                        </div>
+                      </div>
+                      <div class="midleCard">
+                        <div class="cardName">
+                          <h1>Pagina WEB</h1>
+                        </div>
+                        
+                      </div>
+                      <div class="cardDescription">
+                        <h1>Criação e reestilização</h1>
+                      </div>
+                    </div>
                    
                     <div class="cardContainer">
                       <div class="cardTopContainer">
                         <div class="cardImagem">
-                          <img src="./assets/gifs/wordpress.gif" alt="Wordpress" />
+                          <img src="./public/assets/gifs/wordpress.gif" alt="Wordpress" />
                         </div>
                       </div>
                       <div class="midleCard">
@@ -149,9 +167,59 @@
             </div>
             </div>
 
-          <div class="central_atendimento">
-            <div class="container">
-              <div class="tit_page">
+          <div 
+            id="Sitecentral_atendimento"
+            class="central_atendimento site-central_atendimento site-central_atendimento--wavy"
+            role="contentinfo"
+            data-section-id="sections--17049584173256__central_atendimento"
+            data-section-type="central_atendimento"
+          >
+            <div>
+              <style data-genilson="">
+                .site-central_atendimento {
+                  --bg: #4b4b4b;
+                }
+                .site-central_atendimento{
+                  --text: #ffffff;
+                  --text-alpha-15: rgba(255, 255, 255, 0.15);
+                  --text-alpha-50: rgba(255, 255, 255, 0.6);
+                  --text-alpha-85: rgba(255, 255, 255, 0.85);
+                }
+                .site-central_atendimento {
+                  --border: #ffffff;
+                }
+                .genilson-section:last-child .section-padding {
+                  padding-bottom: max(50px, var(--padding-bottom));
+                }
+  
+                .footer-block {
+                  --items-count: 3;
+                }
+              </style>           
+  
+              <div class="central_atendimento__svg">
+                <svg
+                  viewBox="0 -20 700 100"
+                  width="100%"
+                  height="100"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    id="central_atendimento__svg--little-wave"
+                    transform="translate(0, -20)"
+                    d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700"
+                  ></path>
+                  <path
+                    id="central_atendimento__svg--big-wave"
+                    d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z"
+                  ></path>
+                </svg>
+              </div>
+            </div>         
+        
+          
+            <div class="containerClientes">
+              <div class="tit_page" id="clientes">
                 <h4> <span>N</span>ossos  <span>C</span>lientes</h4>
               </div>
              
@@ -166,7 +234,7 @@
                     
                     <div class="cardTopContainer">
                       <div class="cardImagem">
-                        <img src="./assets/img/WLTR.png" alt="Walter Petla" />
+                        <img src="./public/assets/img/WLTR.png" alt="Walter Petla" />
                       </div>
                     </div>
                     <div class="midleCard">
@@ -183,7 +251,7 @@
                   <div class="cardContainer-cliente" id="nautilus">
                     <div class="cardTopContainer">
                       <div class="cardImagem">
-                        <img src="./assets/img/nautilus.png" alt="Walter Petla" />
+                        <img src="./public/assets/img/nautilus.png" alt="Walter Petla" />
                       </div>
                     </div>
                     <div class="midleCard">
@@ -203,7 +271,7 @@
                   <div class="cardContainer-cliente" id="wtr">
                     <div class="cardTopContainer">
                       <div class="cardImagem">
-                        <img src="./assets/img/WLTR.png" alt="Wordpress" />
+                        <img src="./public/assets/img/WLTR.png" alt="Wordpress" />
                       </div>
                     </div>
                     <div class="midleCard">
@@ -224,11 +292,11 @@
                 <div class="icon_central">
                   <img
                     width="700"
-                    src="./assets/img/trabalhoempe.png"
+                    src="./public/assets/img/trabalhoempe.png"
                   />
                 </div>
                 <div class="central_blc_info">
-                  <div class="horario">
+                  <div class="horario" id="atendimento">
                     <p>
                     Estou a sua disposição de
                     <span>Segunda à Sexta</span> das
@@ -240,7 +308,7 @@
                     sobre e discutir o melhor para sua necessidade.
                     </p>
                   </div>
-                  <ul>
+                  <ul class="contatos">
                     <li class="info_email tra">
                       <a href="mailto:comercialgenilsondocarmo@gmail.com">
                         comercialgenilsondocarmo@gmail.com
@@ -293,26 +361,7 @@
               .footer-block {
                 --items-count: 3;
               }
-            </style>
-
-              <div class="footer__svg2">
-                <svg
-                  viewBox="0 -20 700 100"
-                  width="100%"
-                  height="100"
-                  preserveAspectRatio="none"
-                >
-                  <path
-                    id="footer__svg--little-wave2"
-                    transform="translate(0, -20)"
-                    d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700"
-                  ></path>
-                  <path
-                    id="footer__svg--big-wave2"
-                    d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z"
-                  ></path>
-                </svg>
-              </div>
+            </style>           
 
             <div class="footer__svg">
               <svg
@@ -334,17 +383,20 @@
             </div>
           </div>
           <div class="blc_ft">
-            <div class="container">
+            <div class="container" id="containerfooter">
               <div class="col logo_ft">
                 <a href="#">
-                  <img src="./assets/img/RoyalTech.png" title="Genilson" />
+                  <img src="./public/assets/img/RoyalTech.png" title="Genilson" />
                 </a>
               </div>
               <div class="col">
                 <h2>A Royal Tech</h2>
                 <ul>
                   <li>
-                    <a class="tra" href="#"> Sobre a Royal Tech </a>
+                    <a class="tra" href="#atendimento"> Sobre a Royal Tech </a>
+                  </li>
+                  <li>
+                    <a class="tra" href="#clientes"> Clientes </a>
                   </li>
                 </ul>
               </div>
@@ -353,13 +405,13 @@
                 <h2>Serviços</h2>
                 <ul>
                   <li>
-                    <a class="tra" href="#"> Mobile </a>
+                    <a class="tra" href="#mobileService"> Mobile </a>
                   </li>
                   <li>
-                    <a class="tra" href="#/"> WEB </a>
+                    <a class="tra" href="#webservice"> WEB </a>
                   </li>
                   <li>
-                    <a class="tra" href="#"> eCommerce </a>
+                    <a class="tra" href="#ecomerce"> eCommerce </a>
                   </li>
                 </ul>
               </div>
@@ -367,7 +419,7 @@
                 <h2>Atendimento</h2>
                 <ul>
                   <li>
-                    <a class="tra" href="#" id="helpcenter">
+                    <a class="tra" href="#atendimento" id="helpcenter">
                       Central de atendimento
                     </a>
                   </li>
@@ -375,7 +427,7 @@
               </div>
               <div class="col form_pag">
                 <section class="base_newsletter">
-                  <div class="container">
+                  <div class="containersocialicons" >
                     <div class="blc_social">
                       <ul>
                         <li>
@@ -467,20 +519,14 @@
                 class="royalTech"
               >
                 <span>Powered by</span>
-                <img height="25" src="./assets/img/geeh.png" title="Genilson" />
+                <img height="25" src="./public/assets/img/geeh.png" title="Genilson" />
               </a>
             </div>
           </div>
         </footer>
       </div>
-    </div>
-
-    <div id="fb-root" class="fb_reset">
-      <div
-        style="position: absolute; top: -10000px; width: 0px; height: 0px"
-      ></div>
-    </div>
-  <script src="./assets/js/menuhiden.js"></script>
-   <script src="./assets/js/menumobile.js"></script>    
+    </div>   
+  <script src="./public/assets/js/menuhiden.js"></script>
+   <script src="./public/assets/js/menumobile.js"></script>    
   </body>
 </html>
