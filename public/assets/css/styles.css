@@ -373,7 +373,7 @@ header .header:hover::before {
   position: relative;
   z-index: 2000;
   backdrop-filter: blur(5px);
-  background-color: rgba(0, 0, 0, 0.034);
+  background-color: rgb(255, 255, 255);
   transition: opacity 0.3s, visibility 0.3s;
 }
 
@@ -1592,7 +1592,7 @@ div.inchoo-socialconnect-facebook {
     width: calc(40% - 3px);
   }
 
-  header .logo {
+  .logo {
     width: calc(20% - 3px);
     padding-left: 0px;
   }
@@ -1609,8 +1609,7 @@ div.inchoo-socialconnect-facebook {
   .topo_bar li.bt_menu {
     display: inline-block;
   }
-
-  header .menu {
+  header header .menu {
     display: none;
   }
 
